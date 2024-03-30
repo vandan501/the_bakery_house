@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Baker - Bakery Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/267448ee0a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- External CSS file Link-->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- internal css -->
+    <style>
+      .testimonials-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .testimonial-card {
+        width: 600px;
+        display: flex;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+      }
+
+      .left-side {
+        flex: 1;
+        padding: 10px;
+      }
+
+      .left-side img {
+        width: 100%;
+        height: auto;
+      }
+
+      .right-side {
+        flex: 3;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .fa-star {
+        font-size: 22px;
+      }
+      .green {
+        color: green;
+      }
+      .right-side > div {
+        margin-bottom: 10px;
+      }
+
+      .right-side .rating {
+        font-weight: bold;
+      }
+
+      .right-side .feedback {
+        font-style: italic;
+      }
+      .left-side img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      .feedback-msg{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+        <h1 class="text-primary m-0">The Bakery house</h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="service.html" class="nav-item nav-link">Services</a>
+          <a href="product.html" class="nav-item nav-link">Menu</a>
+          <a href="testimonial.html" class="nav-item nav-link active"
+            >Testimonials</a
+          >
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <div class="d-none d-lg-flex">
+          <div
+            class="flex-shrink-0 btn-lg-square border border-light rounded-circle"
+          >
+            <i class="fa fa-phone text-primary"></i>
+          </div>
+          <div class="ps-3">
+            <small class="text-primary mb-0">order now</small>
+            <p class="text-light fs-5 mb-0">+1 (416) 825-1319
+</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div
+      class="container-fluid page-header py-6 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">
+          Testimonial
+        </h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-white" href="#">Pages</a>
+            </li>
+            <li class="breadcrumb-item text-primary active" aria-current="page">
+              Testimonial
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Testimonial Start -->
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <div class="left-side">
+          <img
+            src="https://images.pexels.com/photos/17327534/pexels-photo-17327534/free-photo-of-closeup-of-a-driver-wearing-sunglasses-and-pink-traditional-clothing.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="right-side">
+          <div>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="feedback-msg">
+            <h2>John Smith</h2>
+            <p>"I recently ordered a variety of pastries from The Bakery House, and I must say, they were absolutely delicious! The flavors were rich and authentic, and the pastries were baked to perfection. The customer service was also top-notch. I highly recommend The Bakery House to anyone looking for quality baked goods."</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="left-side">
+          <img
+            src="https://images.pexels.com/photos/3779853/pexels-photo-3779853.png?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="right-side">
+          <div>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="feedback-msg">
+            <h2>Emily Johnson</h2>
+            <p>"I've been a regular customer at The Bakery House for years, and I'm always impressed by the consistent quality of their products. From their fluffy croissants to their decadent cakes, everything is simply delightful. The friendly staff and cozy atmosphere make every visit a pleasure."</p>
+          </div>
+          
+         
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="left-side">
+          <img
+            src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="right-side">
+          <div>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="feedback-msg">
+            <h2>Michael Brown</h2>
+            <p>"I recently ordered a custom cake for my daughter's birthday, and it was a huge hit! Not only was it beautifully decorated, but it tasted amazing too. The attention to detail and personalized service made the whole experience wonderful. Thank you, Bakery House!"</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="left-side">
+          <img
+            src="https://images.pexels.com/photos/3772519/pexels-photo-3772519.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="right-side">
+          <div>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+          </div>
+        
+          <div class="feedback-msg">
+            <h2>Sarah Thompson</h2>
+            <p>"The Bakery House never disappoints! Their fresh bread and pastries are a staple in our household. Whether it's a lazy Sunday morning or a special occasion, we know we can count on The Bakery House for delicious treats that satisfy every time."</p>
+          </div>
+        
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="left-side">
+          <img
+            src="https://images.pexels.com/photos/428364/pexels-photo-428364.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="right-side">
+          <div>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+            
+          <div class="feedback-msg">
+            <h2>David Rodriguez</h2>
+            <p>"I'm always on the lookout for the perfect chocolate chip cookie, and I found it at The Bakery House! Their cookies are perfectly chewy with just the right amount of chocolate chips. It's hard to resist grabbing a few extra every time I visit."</p>
+          </div>
+        
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="left-side">
+          <img
+            src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="right-side">
+          <div>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+           
+          <div class="feedback-msg">
+            <h2>Amy Wilson</h2>
+            <p>"The Bakery House has become my go-to spot for picking up treats for special occasions. Their wide selection ensures there's something for everyone, and their attention to detail never fails to impress. I highly recommend them for any event!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="left-side">
+          <img
+            src="https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="right-side">
+          <div>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star green"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+           
+          <div class="feedback-msg">
+            <h2>Sunny Khalifa</h2>
+            <p>"The Bakery House has become my go-to spot for picking up treats for special occasions. Their wide selection ensures there's something for everyone, and their attention to detail never fails to impress. I highly recommend them for any event!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial End -->
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Office Address</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>729 Lincoln Rd
+                    729 Lincoln Rd, Windsor, ON N8Y 2G8, Canada</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 (416) 825-1319
+</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@thebakeryhouse.com</p>
+            
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Quick Links</h4>
+                <a class="btn btn-link" href="./about.html">About Us</a>
+                <a class="btn btn-link" href="./contact.html">Contact Us</a>
+                <a class="btn btn-link" href="./service.html">Our Services</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Quick Links</h4>
+                <a class="btn btn-link" href="./index.html">Home</a>
+                <a class="btn btn-link" href="./testimonial.html">Testimonials</a>
+                <a class="btn btn-link" href="./product.html">Products/Menu</a>
+                <a class="btn btn-link" href="./team.html">Team</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-light mb-4">Photo Gallery</h4>
+                <div class="row g-2">
+                    <div class="col-4">
+                        <img class="img-fluid bg-light rounded p-1" src="img/product-1.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light rounded p-1" src="img/product-2.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light rounded p-1" src="img/product-3.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light rounded p-1" src="img/product-2.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light rounded p-1" src="img/product-3.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid bg-light rounded p-1" src="img/product-1.jpg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div
+      class="container-fluid copyright text-light py-4 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a href="#">The Bakery House</a>, All Right Reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
